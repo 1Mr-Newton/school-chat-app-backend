@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  backend:
+    build: .
+    command: uvicorn main:app
+    volumes:
+      - .:/chatapp
+    ports:
+      - "8100:8000" 
