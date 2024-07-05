@@ -2,8 +2,9 @@ version: "3.8"
 services:
   backend:
     build: .
-    command: uvicorn main:app
+    command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload
     volumes:
-      - .:/chatapp
-    # ports:
-    #   - "8100:8000" 
+      - .:/churchapp
+    ports:
+      - "8200:8100"
+ 
