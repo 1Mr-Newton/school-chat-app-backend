@@ -5,7 +5,7 @@ ENV PYTHONDONTWRITEBYTECODE 1
 
 # RUN mkdir /chatpp
 
-WORKDIR /chatapp
+WORKDIR /.
 
 RUN pip install --upgrade pip
 
