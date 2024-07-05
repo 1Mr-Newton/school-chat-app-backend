@@ -5,5 +5,5 @@ services:
     command: uvicorn main:app
     volumes:
       - .:/chatapp
-    ports:
-      - "8100:8000" 
+    # ports:
+    #   - "8100:8000" 
